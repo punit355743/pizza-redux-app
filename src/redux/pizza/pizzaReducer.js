@@ -1,7 +1,8 @@
-import { BUY_PIZZA } from './pizzaType'
+import { BUY_PIZZA, BUY_100_PIZZA } from './pizzaType'
 
 const initailState = {
-    numberOFPizza: 500
+    numberOFPizza: 500,
+    isShopOpen: false
 }
 
 export const pizzaReducer = (state = initailState, action) => {

@@ -1,11 +1,13 @@
-const buyPizza = () => {
+import { BUY_PIZZA, BUY_100_PIZZA } from "./pizzaType"
+
+export const buyPizza = () => {
     return {
         type: BUY_PIZZA
     }
 }
 
-const buy100Pizza = () => {
+export const buy100Pizza = () => {
     return {
-        type: BUY_PIZZA
+        type: BUY_100_PIZZA
     }
 }
