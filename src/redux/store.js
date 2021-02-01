@@ -1,4 +1,4 @@
 import { createStore } from 'redux';
-import { pizzaReducer } from './pizza/pizzaReducer';
+import { rootReducer } from './../rootStore';
 
-export const store = createStore(pizzaReducer);
+export const store = createStore(rootReducer);
