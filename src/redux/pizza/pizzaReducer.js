@@ -1,4 +1,4 @@
-import { BUY_PIZZA, BUY_100_PIZZA } from './pizzaType'
+import { BUY_PIZZA, BUY_100_PIZZA, OPEN_PIZZA_SHOP } from './pizzaType'
 
 const initailState = {
     numberOFPizza: 500,
@@ -17,6 +17,11 @@ export const pizzaReducer = (state = initailState, action) => {
             ...state,
             numberOFPizza: state.numberOFPizza - 100
         }
+        case OPEN_PIZZA_SHOP: return {
+            ...state,
+            isShopOpen: !state.isShopOpen
+        }
+
 
         default: return state
     }
