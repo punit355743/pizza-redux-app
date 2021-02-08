@@ -11,7 +11,7 @@ export const iceCreamReducer = (state = initailState, action) => {
     switch (action.type) {
         case BUY_ICECREAM: return {
             ...state,
-            numberOFIcecreams: state.numberOFIcecreams - 1
+            numberOFIcecreams: state.numberOFIcecreams - action.payload
         }
 
 
