@@ -6,7 +6,7 @@ const initailState = {
     error: ''
 }
 
-export const pizzaReducer = (state = initailState, action) => {
+export const userReducer = (state = initailState, action) => {
 
     switch (action.type) {
         case FETCH_USER_REQUEST: return {
